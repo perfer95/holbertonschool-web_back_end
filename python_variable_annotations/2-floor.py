@@ -11,4 +11,3 @@ def floor(n: float) -> int:
     if n >= 0:
         return int(n)
     return int(n) - 1
-
