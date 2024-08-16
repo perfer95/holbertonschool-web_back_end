@@ -20,8 +20,6 @@ async def wait_n(n: int, max_delay: int = 10) -> List[float]:
         delay_time = await task
         unorder.append(delay_time)
 
-    unorder.sort(key = float)
-
     return unorder
 
 if __name__ == "__main__":
