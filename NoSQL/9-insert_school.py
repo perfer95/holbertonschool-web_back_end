@@ -6,7 +6,7 @@
 
 def insert_school(mongo_collection, **kwargs):
     """
-    test
+    test_2
     """
     document_id = mongo_collection.insert(kwargs)
     return document_id
