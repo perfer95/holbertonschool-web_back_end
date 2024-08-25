@@ -2,7 +2,6 @@
 """
 8. List all documents in Python
 """
-import pymongo
 
 
 def list_all(mongo_collection):
@@ -11,6 +10,6 @@ def list_all(mongo_collection):
     Considering that pymongo was imported
     """
     documents = mongo_collection.find()
-    if documents.count() == 0:
+    if (documents.count() == 0):
         return []
     return list(documents)
