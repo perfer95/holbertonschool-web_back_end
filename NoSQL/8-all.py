@@ -1,10 +1,14 @@
-#!/usr/bin/env python3
-"""function that lists all documents in a collection"""
+#!/usr/bin/python3
+"""
+8. List all documents in Python
+"""
 
 
 def list_all(mongo_collection):
-    """mongo_collection will be the pymongo collection object."""
-    documents = mongo_collection.find()
-    if documents.count() == 0:
+    """
+    Python function that lists all documents in a collection
+    """
+    docs = mongo_collection.find()
+    if docs.count() == 0:
         return []
-    return documents
+    return docs
